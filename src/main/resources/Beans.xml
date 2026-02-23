@@ -9,16 +9,17 @@
 
     <context:component-scan base-package="org.groupid" />
 
-    <bean id="character1" class="org.groupid.Character"> <property name="name" value="THE Giant Squid" />
+    <bean id="character1" class="org.groupid.Character">
+        <property name="name" value="THE Giant Squid" />
         <property name="health" value="100" />
-        <property name="strength" value="15" />
+        <property name="strength" value="10" />
         <property name="fightingPower" ref="Nemobeam" />
     </bean>
 
     <bean id="character2" class="org.groupid.Character">
         <property name="name" value="Captain Nemo" />
-        <property name="health" value="500" />
-        <property name="strength" value="80" />
+        <property name="health" value="100" />
+        <property name="strength" value="10" />
         <property name="fightingPower" ref="Twentyk" />
     </bean>
 </beans>
