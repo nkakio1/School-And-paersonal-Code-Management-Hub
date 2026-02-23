@@ -1,10 +1,10 @@
 package org.groupid;
 
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class IOCApp1 {
-     public static void main(String[] args) {
-        FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext("src/main/resources/Beans.xml");
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Battle battle = context.getBean(Battle.class);
         battle.fight();
         context.close();
